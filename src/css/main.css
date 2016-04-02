@@ -1,0 +1,55 @@
+/*main.css*/
+
+body
+{
+    font-family: "UbuntuRegular", serif;
+    background-image: url(https://mysticalchrist.files.wordpress.com/2016/01/lottery-balls.jpg);
+}
+
+#background-img
+{
+    position:fixed;
+    z-index:-1;
+}
+
+.helvetica
+{
+    font: normal 14px/20px Arial, Helvetica, sans-serif;
+}
+
+.blur
+{
+    filter:blur(4px);
+    -ms-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+
+#top
+{
+    text-align: center;
+    background-image: url(http://www.loto.com.ph/sites/default/files/lotto-balls-banner.jpg);
+    background-size: cover;
+}
+
+#mid
+{
+
+}
+
+#bot
+{
+    position:fixed;
+    bottom:0;
+    height:20%;
+    width:100%;
+    background-color: #9fcd3d;
+}
+
+/*Menu:*/
+#menu_bar
+{
+    background-color: #9fcc3d;
+    height: 60px;
+    padding:5px;
+}
+
