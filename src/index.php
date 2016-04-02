@@ -20,14 +20,14 @@
             <img src="img/logo.png" alt="Logo"/>
         </div>
         <div id="menu_bar">
-            menu
+            Górna część to wymyślone/znalezione logo oraz menu do podstron z historią gry, zasadami etc.
         </div>
     </div>
     <div id="mid">
-        mid
+        Srodek to oczywiscie główna część strony. Podział jaki zostanie zastosowany pozostawiam do wymyślenia i dostosowania do własnych potrzeb.
     </div>
     <div id="bot">
-        down
+        Dół strony to oczywiscie kontakt do autora z linkiem do postrony z przykładowym formularzem wysłania maila(użyte legend,textarea,inputy). Podstrona z formularzem ma następnie wyświetlic w przystępny sposób wszystkie podane dane przez użytkownika. W dolnej części strony można zawrzeć również ewentualne inne informację - imie,nazwisko etc.
     </div>
 </body>
 </html>
