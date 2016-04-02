@@ -1,0 +1,2 @@
+# KenoLotto
+Keno Lotto website
