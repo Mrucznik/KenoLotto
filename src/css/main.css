@@ -9,6 +9,9 @@ body
 #background-img
 {
     position:fixed;
+    width: 100%;
+    min-height: 100%;
+    min-width: 800px;
     z-index:-1;
 }
 

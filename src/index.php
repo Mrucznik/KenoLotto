@@ -16,7 +16,6 @@
     <img src="https://mysticalchrist.files.wordpress.com/2016/01/lottery-balls.jpg" class="blur" id="background-img"/>
     <div id="top">
         <div id="logo_container">
-
             <img src="img/logo.png" alt="Logo"/>
         </div>
         <div id="menu_bar">
