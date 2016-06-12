@@ -2,9 +2,58 @@
 
 body
 {
-    font-family: "UbuntuRegular", serif;
-    background-image: url(https://mysticalchrist.files.wordpress.com/2016/01/lottery-balls.jpg);
+    background-image: url(../img/lottery-balls.jpg);
 }
+
+/*font*/
+body
+{
+    color: #685206;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a
+{
+    text-decoration: none;
+    color:dimgrey;
+}
+
+h1
+{
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2em; font-weight: bold;
+    letter-spacing: -1px; line-height: 1;
+    text-align: center;
+}
+
+h2
+{
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em; font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 72px;
+    text-align: center;
+}
+
+p
+{
+    color: #685206;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*INNE*/
 
 #background-img
 {
@@ -15,11 +64,6 @@ body
     z-index:-1;
 }
 
-.helvetica
-{
-    font: normal 14px/20px Arial, Helvetica, sans-serif;
-}
-
 .blur
 {
     filter:blur(4px);
@@ -27,35 +71,93 @@ body
     -webkit-filter:blur(4px);
 }
 
+/*Main containers:*/
 #top
 {
+    margin-top:18px;
     text-align: center;
-    background-image: url(http://www.loto.com.ph/sites/default/files/lotto-balls-banner.jpg);
+    background-image: url(../img/lotto-balls-banner.jpg);
     background-size: cover;
 }
 
 #mid
 {
-
+    text-align: center;
 }
 
 #bot
 {
     position:fixed;
     bottom:0;
-    height:20%;
+    height:30px;
+    line-height: 30px;
     width:100%;
-    background: repeating-radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(159, 204, 61, 0.7), rgba(255, 255, 255, 0.5), rgba(159, 204, 61, 0.7));
+    text-align: right;
+    vertical-align: middle;
+
+    background: rgba(227, 232, 235, 1.0);
 }
 
+#logo_container
+{
+    text-align: left;
+}
 /*Menu:*/
 #menu_bar
 {
-    height: 60px;
-    padding:5px;
+    display: inline-block;
 
-    /*background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(159, 204, 61, 1));*/
-    background: repeating-linear-gradient(0deg, rgba(159, 204, 61, 0.7), rgba(159, 204, 61, 0.5), rgba(255, 255, 255, 0));
-    border-bottom: 1px solid rgb(159, 204, 61);
+    padding: 5px 25px 5px 25px;
+    margin: 0 auto;
+    min-width: 50%;
+    min-height: 30px;
+
+    background: rgba(227, 232, 235, 1.0);
+    text-align: center;
+    border-radius: 0px 0px 100px 100px;
+
+    font-size: 24px;
+    overflow: visible;
+
 }
 
+.menulink
+{
+    text-decoration: none;
+    color:black;
+}
+
+/*Mid:*/
+#midcontainer
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    padding-bottom: 21px;
+    min-width:400px;
+    max-width:50%;
+    border: 7px solid rgba(227, 232, 235, 1.0);
+    border-radius: 18px;
+
+    background: rgba(255, 207, 47, 0.55);
+    font-size: 24px;
+}
+
+/*Stopka*/
+.botspan
+{
+    font-size: 24px;
+    padding-left:33px;
+    padding-right:33px;
+}
+
+#copyright
+{
+
+}
+
+/*------------Graj*/
+#graj_div
+{
+
+}
