@@ -5,6 +5,56 @@ body
     background-image: url(../img/lottery-balls.jpg);
 }
 
+legend
+{
+    text-align: left;
+    color:black;
+}
+
+input
+{
+    height:auto;
+    width:250px;
+
+    margin:3px;
+    border: 1px solid #444;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 2px;
+    background-color: #222;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.9);
+    color: #8A8C8C;
+
+    -moz-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    transition: color 250ms ease-in-out, background 250ms ease-in-out;
+}
+
+input:focus
+{
+    color: #393a3a;
+}
+
+textarea
+{
+    width:350px;
+
+    margin:3px;
+    border: 1px solid #444;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 2px;
+    background-color: #222;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.9);
+    color: #8A8C8C;
+
+    -moz-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    transition: color 250ms ease-in-out, background 250ms ease-in-out;
+}
+
 /*font*/
 body
 {
@@ -38,7 +88,7 @@ h2
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em; font-weight: 300;
     line-height: 32px;
-    margin: 0 0 72px;
+    margin: 0 0 24px;
     text-align: center;
 }
 
@@ -74,8 +124,9 @@ p
 /*Main containers:*/
 #top
 {
-    margin-top:18px;
-    text-align: center;
+    /*margin-top:18px;*/
+    padding: 10px 37px 10px 37px;
+    text-align: left;
     background-image: url(../img/lotto-balls-banner.jpg);
     background-size: cover;
 }
@@ -83,6 +134,7 @@ p
 #mid
 {
     text-align: center;
+
 }
 
 #bot
@@ -100,25 +152,22 @@ p
 
 #logo_container
 {
+    display: inline-block;
     text-align: left;
+
+}
+
+#top_rozdzialka
+{
+    width: calc( 100% - 725px );
+    display: inline-block;
+    height:1px;
 }
 /*Menu:*/
 #menu_bar
 {
     display: inline-block;
-
-    padding: 5px 25px 5px 25px;
-    margin: 0 auto;
-    min-width: 50%;
-    min-height: 30px;
-
-    background: rgba(227, 232, 235, 1.0);
-    text-align: center;
-    border-radius: 0px 0px 100px 100px;
-
-    font-size: 24px;
-    overflow: visible;
-
+    text-align:right;
 }
 
 .menulink
@@ -127,19 +176,44 @@ p
     color:black;
 }
 
+.menuspan
+{
+    widht:75px;
+    height:75px;
+}
+
 /*Mid:*/
+/*#midcontainer*/
+/*{*/
+    /*margin: 21px auto 51px;*/
+    /*padding-bottom: 21px;*/
+    /*min-width:400px;*/
+    /*max-width:50%;*/
+    /*border: 7px solid rgba(227, 232, 235, 1.0);*/
+    /*border-radius: 18px;*/
+
+    /*background: rgba(255, 207, 47, 0.55);*/
+    /*font-size: 24px;*/
+/*}*/
+
 #midcontainer
 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 21px;
-    padding-bottom: 21px;
-    min-width:400px;
-    max-width:50%;
-    border: 7px solid rgba(227, 232, 235, 1.0);
-    border-radius: 18px;
+    position:relative;
 
-    background: rgba(255, 207, 47, 0.55);
+    margin:auto;
+    padding: 1px 18px 18px;
+
+    min-width:400px;
+    max-width:60%;
+
+    min-height: calc(100vh - 178px);
+
+    border-left: 7px solid black;
+    border-right: 7px solid black;
+
+    background: rgba(227, 232, 235, 0.95);
+    box-shadow:inset 0 0 30px rgba(0,0,0,.15);
+
     font-size: 24px;
 }
 
@@ -160,4 +234,36 @@ p
 #graj_div
 {
 
+}
+
+/*------------Zasady*/
+#zasady_div
+{
+
+}
+
+/*------------Historia*/
+#historia_div
+{
+
+}
+
+/*------------Kontakt*/
+#kontakt_div
+{
+
+}
+
+#contact_form
+{
+    text-align:left;
+    margin-bottom: 30px;
+    padding: 0 10px 10px 10px;
+}
+
+.cclabel
+{
+    display:block;
+    width:150px;
+    float: left;
 }

@@ -18,10 +18,10 @@
     </h2>
 
     <div>
-        <ul>
-            <li><a href="index.php?page=graj" class="round yellow">Gra nr 1<span class="round">Ta gra jest tak zajebista, że nie ogarniesz!</span></a></li>
-            <li></li>
-            <li><a href="index.php?page=graj" class="round yellow">Gra nr 2<span class="round">Ta gra jest tak zajebista, że nie ogarniesz!</span></a></li>
+        <ul class="button">
+            <li class="button bigbutton"><a href="index.php?page=graj" class="round yellow">Szybka&nbsp; gra<span class="round yellow"><b>Szybka gra</b> losowanie 20 liczb z przedziału 1-50</span></a></li>
+            <li class="button"></li>
+            <li class="button bigbutton"><a href="index.php?page=graj" class="round yellow">Gra z portfelem<span class="round yellow">Rozpoczynasz grę z portfelem 100pkt. Możliwość wyboru liczby losowań.</span></a></li>
         </ul>
     </div>
 

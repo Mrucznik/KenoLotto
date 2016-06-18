@@ -7,5 +7,25 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../Biblioteki/php-5.6.20-Win32-VC11-x86" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../../Biblioteki/php-5.6.20-Win32-VC11-x86" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/../../../../Biblioteki/php-5.6.20-Win32-VC11-x86/pharcommand.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/../../../../Biblioteki/php-5.6.20-Win32-VC11-x86/pharcommand.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

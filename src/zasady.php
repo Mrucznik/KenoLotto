@@ -10,4 +10,7 @@
 
 <div id="zasady_div">
     <h1>Zasady</h1>
+    
+
+
 </div>

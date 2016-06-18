@@ -3,26 +3,24 @@
     *Edited by Szymon Gajda
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-ul {
+ul.button {
     margin: 30px auto;
+    padding:0;
     text-align: center;
 }
 
-li {
+li.button {
     list-style: none;
     position: relative;
     display: inline-block;
     width: 100px;
     height: 100px;
+}
+
+li.bigbutton
+{
+    width: 125px;
+    height: 125px;
 }
 
 div.button
@@ -57,6 +55,13 @@ div.button
 }
 
 .round {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
     display: block;
     position: absolute;
     left: 0;
@@ -77,7 +82,7 @@ div.button
     transition: all .25s ease-in-out;
     box-shadow: 2px 2px 7px rgba(85, 57, 28, 0.2);
     border-radius: 300px;
-    z-index: 1;
+    /*z-index: 1;*/
     border-width: 4px;
     border-style: solid;
 }
@@ -98,7 +103,7 @@ div.button
     -o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
     -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
     box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-    z-index: 2;
+    /*z-index: 2;*/
     border-size: 10px;
     -webkit-transform: rotate(-360deg);
     -moz-transform: rotate(-360deg);
@@ -114,6 +119,7 @@ div.red, a.red {
 
 div.red:hover, a.red:hover {
     color: rgba(239,57,50,1);
+    text-shadow: none;
 }
 
 div.green, a.green {
@@ -124,6 +130,7 @@ div.green, a.green {
 
 div.green:hover, a.green:hover {
     color: rgba(1,151,171,1);
+    text-shadow: none;
 }
 
 div.yellow, a.yellow {
@@ -134,6 +141,7 @@ div.yellow, a.yellow {
 
 div.yellow:hover, a.yellow:hover {
     color: rgba(252,227,1,1);
+    text-shadow: none;
 }
 
 div.white, a.white {
@@ -157,11 +165,11 @@ div.white:hover, a.white:hover {
     font-size: 1px;
     border: none;
     padding: 40% 20% 0 20%;
-    /*color: #fff;*/
-    color: #000;
+    color: #fff;
+    /*color: #000;*/
 }
 
-span.round.white {
+span.round.white, span.round.yellow {
     color: #000;
 }
 
@@ -189,4 +197,48 @@ span.round.white {
 
 .white span {
     background: rgba(227, 232, 235,.7);
+}
+
+/*Send button*/
+.sendButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+    background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+    background-color:#ffffff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    width:168px;
+    height:68px;
+}
+.sendButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+    background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+    background-color:#f6f6f6;
+}
+.sendButton:active {
+    position:relative;
+    top:1px;
 }
