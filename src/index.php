@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/anim.css">
+    <link rel="stylesheet" href="css/game.css">
 
 <!--     Scripts:-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
 </head>
 <body>
     <img src="img/lottery-balls.jpg" class="blur" id="background-img"/>

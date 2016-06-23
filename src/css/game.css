@@ -21,6 +21,11 @@ input.lottoball[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+div.lottoball
+{
+    margin: 25% AUTO;
+}
+
 input.lottoball
 {
     width:50px;
@@ -46,9 +51,21 @@ span.lottoball
     margin:10px;
 }
 
+span.win
+{
+    border: 1px solid #5cabff !important;
+    background: radial-gradient(circle at 33% 33%, #5cabff, #000) !important;
+}
+
 #ballcontainer
 {
     width:400px;
+    margin:1em auto;
+}
+
+.ballcontainer
+{
+    max-width:750px;
     margin:1em auto;
 }
 

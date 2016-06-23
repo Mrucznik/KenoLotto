@@ -26,10 +26,10 @@ else if(!empty($_GET['page']))
     switch ($_GET['page'])
     {
         case "gra1":
-            include "pages/gra1.html";
+            include "pages/gra1.php";
             break;
         case "gra2":
-            include "pages/gra2.html";
+            include "pages/gra2.php";
             break;
         case "zasady":
             include "pages/zasady.html";
