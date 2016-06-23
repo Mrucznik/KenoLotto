@@ -1,4 +1,7 @@
 <?php
+    /*
+     * Created by Szymon Roger Gajda
+     */
 
 ?>
 
@@ -13,6 +16,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/anim.css">
+
+<!--     Scripts:-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.js"></script>
 </head>
 <body>
     <img src="img/lottery-balls.jpg" class="blur" id="background-img"/>
@@ -43,31 +49,7 @@
     <div id="mid">
         <div id="midcontainer" class="">
             <?php
-                if(!empty($_GET['page']))
-                {
-                    switch ($_GET['page'])
-                    {
-                        case "graj":
-                            include "graj.php";
-                            break;
-                        case "zasady":
-                            include "zasady.php";
-                            break;
-                        case "historia":
-                            include "historia.php";
-                            break;
-                        case "kontakt":
-                            include "kontakt.php";
-                            break;
-                        default:
-                            include "hello.php";
-                            break;
-                    }
-                }
-                else
-                {
-                    include "hello.php";
-                }
+            require_once "engine.php";
             ?>
         </div>
     </div>

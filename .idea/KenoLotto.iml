@@ -27,5 +27,7 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="jQuery-2.0.0" level="project" />
+    <orderEntry type="library" name="jquery-3.0.0" level="application" />
   </component>
 </module>

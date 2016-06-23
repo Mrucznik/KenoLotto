@@ -1,0 +1,81 @@
+/*game.css*/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    black;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    black;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    black;
+}
+
+input.lottoball[type=number]::-webkit-inner-spin-button,
+input.lottoball[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input.lottoball
+{
+    width:50px;
+    height:50px;
+    background: none;
+    outline:none;
+    border:none;
+
+    text-align: center;
+}
+
+span.lottoball
+{
+    display: inline-block;
+    width:50px;
+    height:50px;
+
+    background: radial-gradient(circle at 33% 33%, orange, orangered);
+    border-radius:50%;
+    border: 1px solid orange;
+
+    text-align: center;
+    margin:10px;
+}
+
+#ballcontainer
+{
+    width:400px;
+    margin:1em auto;
+}
+
+#liczba_kul
+{
+    background-color: orange;
+    opacity:.8;
+}
+
+#liczba_losowan
+{
+    background-color: orange;
+    opacity:.8;
+    width:50px;
+}
+
+.losujbutton
+{
+    background: linear-gradient(180deg, orange, darkorange);
+    border-color: orange;
+    border-radius: 10px;
+    height:47px;
+    width:94px;
+    color:#685206;
+}
+
+.losujbutton:active
+{
+    outline:none;
+}

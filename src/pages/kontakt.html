@@ -1,0 +1,53 @@
+<div id="kontakt_div">
+    <h1>Formularz kontaktowy</h1>
+    <form id="contact_form" method="post" action="index.php" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Wypełnij formularz kontaktowy:</legend>
+
+            <div>
+                <label for="contact_name" class="cclabel" title="imie">
+                    Imię
+                </label>
+
+                <input form="contact_form" name="name" id="contact_name" class="contact" type="text" size="15" aria-required="true" required>
+            </div>
+
+            <div>
+                <label for="contact_surname" class="cclabel" title="">
+                    Nazwisko
+                </label>
+                <input name="surname" id="contact_surname" class="contact" type="text" size="15" aria-required="true" required>
+            </div>
+
+            <div>
+                <label for="contact_email" class="cclabel" title="">
+                    Email
+                </label>
+                <input name="email" id="contact_email" class="contact" type="email" size="25" aria-required="true" required>
+            </div>
+
+            <div>
+                <label for="contact_topic" class="cclabel" title="">
+                    Temat
+                </label>
+                <input name="topic" id="contact_topic" class="contact" type="text" size="30" aria-required="true" required>
+            </div>
+
+            <div>
+                <label for="contact_textarea" class="cclabel" title="">
+                    Wiadomość
+                </label><br/>
+                <textarea name="message" id="contact_textarea" class="contact" cols="50" rows="10" maxlength="70" aria-required="true" required></textarea>
+            </div>
+
+        </fieldset>
+
+        <br/>
+
+        <div class="submit" style="text-align:center;">
+            <button class="sendButton" type="submit">Wyślij list</button>
+        </div>
+
+        <input type="hidden" name="action" value="kontakt">
+    </form>
+</div>

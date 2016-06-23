@@ -1,5 +1,10 @@
 /*main.css*/
 
+*
+{
+    outline-color: black;
+}
+
 body
 {
     background-image: url(../img/lottery-balls.jpg);
@@ -11,54 +16,43 @@ legend
     color:black;
 }
 
-input
+.contact
+{
+    margin:3px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.9);
+    color: #8A8C8C;
+
+    -moz-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out, background 250ms ease-in-out;
+    transition: color 250ms ease-in-out, background 250ms ease-in-out;
+}
+
+input.contact
 {
     height:auto;
     width:250px;
 
-    margin:3px;
-    border: 1px solid #444;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 2px;
-    background-color: #222;
-    background-color: rgba(0,0,0,0.2);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.9);
-    color: #8A8C8C;
-
-    -moz-transition: color 250ms ease-in-out, background 250ms ease-in-out;
-    -webkit-transition: color 250ms ease-in-out, background 250ms ease-in-out;
-    -o-transition: color 250ms ease-in-out, background 250ms ease-in-out;
-    transition: color 250ms ease-in-out, background 250ms ease-in-out;
 }
 
-input:focus
-{
-    color: #393a3a;
-}
-
-textarea
+textarea.contact
 {
     width:350px;
+}
 
-    margin:3px;
-    border: 1px solid #444;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 2px;
-    background-color: #222;
-    background-color: rgba(0,0,0,0.2);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.9);
-    color: #8A8C8C;
-
-    -moz-transition: color 250ms ease-in-out, background 250ms ease-in-out;
-    -webkit-transition: color 250ms ease-in-out, background 250ms ease-in-out;
-    -o-transition: color 250ms ease-in-out, background 250ms ease-in-out;
-    transition: color 250ms ease-in-out, background 250ms ease-in-out;
+input.contact:focus,
+textarea.contact:focus
+{
+    color: #393a3a;
 }
 
 /*font*/
 body
 {
-    color: #685206;
+    color: black;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -94,9 +88,9 @@ h2
 
 p
 {
-    color: #685206;
+    color: black;
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 24px;
     margin: 0 0 24px;
     text-align: justify;
@@ -230,30 +224,7 @@ p
 
 }
 
-/*------------Graj*/
-#graj_div
-{
-
-}
-
-/*------------Zasady*/
-#zasady_div
-{
-
-}
-
-/*------------Historia*/
-#historia_div
-{
-
-}
-
 /*------------Kontakt*/
-#kontakt_div
-{
-
-}
-
 #contact_form
 {
     text-align:left;
@@ -266,4 +237,29 @@ p
     display:block;
     width:150px;
     float: left;
+}
+
+#cmcontainer
+{
+    color:black;
+    margin:1em auto;
+    width:400px;
+    text-align:left;
+    border:2px solid black;
+}
+
+#contactsignature
+{
+    text-align: right;
+    font-size: .8em;
+}
+
+#cmtopic
+{
+    border-bottom: 1px solid black;
+}
+
+#cmmessage
+{
+    font-size: .8em;
 }

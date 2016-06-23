@@ -219,7 +219,7 @@ span.round.white, span.round.yellow {
     display:inline-block;
     cursor:pointer;
     color:#666666;
-    font-family:Arial;
+    font-family: Arial, serif;
     font-size:15px;
     font-weight:bold;
     padding:6px 24px;
