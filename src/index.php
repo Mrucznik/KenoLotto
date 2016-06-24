@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/Normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/anim.css">
     <link rel="stylesheet" href="css/game.css">
 
 <!--     Scripts:-->
@@ -27,7 +26,7 @@
     <div id="top">
         <span id="logo_container">
             <a href="index.php">
-                <div class="button" style="display:inline-block; margin:0px;">
+                <div class="button" style="display:inline-block; margin:0;">
                     <div class="round white">
                         <div style="text-decoration: underline; font-size:2em;">7</div>
                         <span class="round white">Przejdź na stronę główną</span>
@@ -40,11 +39,13 @@
         <span id="top_rozdzialka"></span>
 
         <span id="menu_bar">
-           <ul class="button" style="margin:0;">
-                <li class="button"><a href="index.php?page=hello" class="round green">Graj<span class="round">Zagraj w KENO&nbsp;LOTTO!</span></a></li>
-                <li class="button"><a href="index.php?page=zasady" class="round red">Zasady<span class="round">Zasady oraz opis gry KENO&nbsp;LOTTO</span></a></li>
-                <li class="button"><a href="index.php?page=historia" class="round yellow">Historia<span class="round yellow">Historia gry KENO&nbsp;LOTTO</span></a></li>
-            </ul>
+           <span class="button" style="margin:0;">
+               <ul class="button">
+                   <li class="button"><a href="index.php?page=hello" class="round green">Graj<span class="round">Zagraj w KENO&nbsp;LOTTO!</span></a></li>
+                    <li class="button"><a href="index.php?page=zasady" class="round red">Zasady<span class="round">Zasady oraz opis gry KENO&nbsp;LOTTO</span></a></li>
+                    <li class="button"><a href="index.php?page=historia" class="round yellow">Historia<span class="round yellow">Historia gry KENO&nbsp;LOTTO</span></a></li>
+               </ul>
+            </span>
 
         </span>
     </div>

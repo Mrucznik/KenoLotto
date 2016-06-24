@@ -4,11 +4,12 @@
 
 function createLottoBalls()
 {
-    $('#ballcontainer').empty();
+    var ball = $('#ballcontainer');
+    ball.empty();
     var ilosc_kul = $('#liczba_kul').prop('value');
     for(var i=0; i<ilosc_kul; i++)
     {
-        $('#ballcontainer').append("<span class='lottoball'> <input id='lb_nr_" + i + "' name='ball_" + i +  "' class='lottoball' type='number' min='1' max='50' placeholder='_' onchange='checkLottoBall(" + i + ");' aria-required='true' required> </span>");
+        ball.append("<span class='lottoball'> <input id='lb_nr_" + i + "' name='ball_" + i +  "' class='lottoball' type='number' min='1' max='50' placeholder='_' onchange='checkLottoBall(" + i + ");' aria-required='true' required> </span>");
     }
 }
 
@@ -22,9 +23,10 @@ function checkLottoBall(kula_idx)
     {
         for(var i=0; i<ilosc_kul; i++)
         {
-            if($('#lb_nr_'+i).val() !== undefined)
+            var ball = $('#lb_nr_'+i);
+            if(ball.val() !== undefined)
             {
-                if(i!==kula_idx && $('#lb_nr_'+i).val() === kula.val())
+                if(i!==kula_idx && ball.val() === kula.val())
                 {
                     alert('Liczba ' + kula.val() + ' była już wpisywana. Wybierz inną!');
                     kula.val('');

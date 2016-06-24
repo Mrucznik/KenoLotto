@@ -38,36 +38,9 @@ for($i = 0; $i < 50; $i++)
 {
     $random_balls[$i] = array("ball" => $random_balls[$i], "winner"=>false); //tworzenie tablic
 }
-
 $winballs_ammount = 0;
 $balls = array(10);
 $balls_number = $_POST['balls'];
-
-//typowanie zwyciezcow
-for($i = 0; $i < $balls_number; $i++)
-{
-    $balls[$i] = $_POST['ball_' . $i];
-    if(isProperlyBall($balls[$i]))
-    {
-        $random_balls[$balls[$i]-1]['winner'] = true;
-    }
-    else
-    {
-        echo "ERROR2";
-        return;
-    }
-}
-
-//losowanie (mieszanie)
-shuffle($random_balls);
-
-//--------------[ Wygrana ]--------------
-for($i = 0; $i<20; $i++)
-{
-    if($random_balls[$i]['winner'])
-        $winballs_ammount++;
-}
-
 //1 wymiar - ilosc typowanych liczb
 //2 wymiar - ilosc trafionych liczb
 $prize_table = array(
@@ -77,7 +50,8 @@ $prize_table = array(
     ),
     2 => array(
         0 => 0,
-        1 => 14,
+        1 => 0,
+        2 => 14,
     ),
     3 => array(
         0 => 0,
@@ -157,6 +131,32 @@ $prize_table = array(
     )
 );
 
+
+//typowanie zwyciezcow
+for($i = 0; $i < $balls_number; $i++)
+{
+    $balls[$i] = $_POST['ball_' . $i];
+    if(isProperlyBall($balls[$i]))
+    {
+        $random_balls[$balls[$i]-1]['winner'] = true;
+    }
+    else
+    {
+        echo "ERROR2";
+        return;
+    }
+}
+
+//losowanie (mieszanie)
+shuffle($random_balls);
+
+//--------------[ Wygrana ]--------------
+for($i = 0; $i<20; $i++)
+{
+    if($random_balls[$i]['winner'])
+        $winballs_ammount++;
+}
+
 $prize = $prize_table[$balls_number][$winballs_ammount]*2;
 
 //--------------[ Wyświetlanie ]--------------
@@ -203,20 +203,17 @@ if($prize > 0)
 else
     echo "<h2 style='margin:1.33em auto;'>Niestety nic nie wygrałeś :(</h2>";
 
-echo "<a href='index.php?page=gra1&selected=$balls_number'><button>Zagraj jeszcze raz!</button></a>";
+echo "<a href='index.php?page=gra1&selected=$balls_number'><button class=\"losujbutton\">Wytypuj inne liczby</button></a>";
 ?>
 
-<input form="formagain" type="submit" value="Graj jeszcze raz z tymi samymi liczbami!">
+<input class="losujbutton" form="formagain" type="submit" value="Jeszcze raz te same liczby">
 <form id="formagain" method="post" action="index.php" enctype="application/x-www-form-urlencoded">
     <?php
     echo "<input type='hidden' name='balls' value='$balls_number'>";
     for($i=0; $i<$balls_number; $i++)
     {
-        echo "
-        <input type='hidden' name='ball_$i' value=' " . $balls[$i] . "'>
-        ";
+        echo " <input type='hidden' name='ball_$i' value=' " . $balls[$i] . "'>";
     }
     ?>
     <input type="hidden" name="action" value="gra1">
-
 </form>

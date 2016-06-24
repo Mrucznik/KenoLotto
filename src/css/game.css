@@ -51,21 +51,9 @@ span.lottoball
     margin:10px;
 }
 
-span.win
-{
-    border: 1px solid #5cabff !important;
-    background: radial-gradient(circle at 33% 33%, #5cabff, #000) !important;
-}
-
 #ballcontainer
 {
     width:400px;
-    margin:1em auto;
-}
-
-.ballcontainer
-{
-    max-width:750px;
     margin:1em auto;
 }
 
@@ -79,7 +67,7 @@ span.win
 {
     background-color: orange;
     opacity:.8;
-    width:50px;
+    width:2.5em;
 }
 
 .losujbutton
@@ -88,11 +76,20 @@ span.win
     border-color: orange;
     border-radius: 10px;
     height:47px;
-    width:94px;
+    padding:0 1em;
+    margin-bottom:1em;
     color:#685206;
 }
 
 .losujbutton:active
 {
     outline:none;
+}
+
+.percent
+{
+    display:inline-block;
+    width:90px;
+    margin-left:10px;
+    text-align:left;
 }

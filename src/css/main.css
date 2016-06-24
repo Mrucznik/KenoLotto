@@ -86,8 +86,7 @@ h2
     text-align: center;
 }
 
-p
-{
+p {
     color: black;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 1em;
@@ -97,7 +96,16 @@ p
     text-justify: inter-word;
 }
 
+b, strong
+{
+    font-weight: bold !important;
+}
+
 /*INNE*/
+.center
+{
+    text-align:center;
+}
 
 #background-img
 {
@@ -168,12 +176,6 @@ p
 {
     text-decoration: none;
     color:black;
-}
-
-.menuspan
-{
-    widht:75px;
-    height:75px;
 }
 
 /*Mid:*/
