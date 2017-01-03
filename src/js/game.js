@@ -9,7 +9,7 @@ function createLottoBalls()
     var ilosc_kul = $('#liczba_kul').prop('value');
     for(var i=0; i<ilosc_kul; i++)
     {
-        ball.append("<span class='lottoball'> <input id='lb_nr_" + i + "' name='ball_" + i +  "' class='lottoball' type='number' min='1' max='50' placeholder='_' onchange='checkLottoBall(" + i + ");' aria-required='true' required> </span>");
+        ball.append("<span class='lottoball'> <input id='lb_nr_" + i + "' name='ball_" + i +  "' class='lottoball' type='number' min='1' max='70' placeholder='_' onchange='checkLottoBall(" + i + ");' aria-required='true' required> </span>");
     }
 }
 

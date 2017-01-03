@@ -6,11 +6,7 @@
  * Time: 20:38
  */
 
-/*
- * We gets:
- * balls
- * ball_1 to ball_10
- */
+$maxballnumber = 70;
 
 //--------------[ Losowanie ]--------------
 // losowanie przez system 20 liczb z przedziału 1-50
@@ -20,7 +16,7 @@
  */
 function isProperlyBall($ball)
 {
-    if(!empty($ball) && is_numeric($ball) && $ball >= 1 && $ball <= 50)
+    if(!empty($ball) && is_numeric($ball) && $ball >= 1 && $ball <= 70)
         return true;
     return false;
 }
@@ -33,8 +29,8 @@ if(!is_numeric($_POST['balls']) || $_POST['balls'] < 1 || $_POST['balls'] > 10)
 }
 
 //inicjacja
-$random_balls = range(1, 50);
-for($i = 0; $i < 50; $i++)
+$random_balls = range(1, $maxballnumber);
+for($i = 0; $i < $maxballnumber; $i++)
 {
     $random_balls[$i] = array("ball" => $random_balls[$i], "winner"=>false); //tworzenie tablic
 }
@@ -157,7 +153,7 @@ for($i = 0; $i<20; $i++)
         $winballs_ammount++;
 }
 
-$prize = $prize_table[$balls_number][$winballs_ammount]*2;
+$prize = $prize_table[$balls_number][$winballs_ammount];
 
 //--------------[ Wyświetlanie ]--------------
 /**

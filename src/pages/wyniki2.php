@@ -7,12 +7,7 @@
  */
 
 
-
-/*
- * We gets:
- * balls
- * ball_1 to ball_10
- */
+$maxballnumber = 70;
 
 //--------------[ Losowanie ]--------------
 // losowanie przez system 20 liczb z przedziału 1-50
@@ -22,7 +17,7 @@
  */
 function isProperlyBall($ball)
 {
-    if(!empty($ball) && is_numeric($ball) && $ball >= 1 && $ball <= 50)
+    if(!empty($ball) && is_numeric($ball) && $ball >= 1 && $ball <= 70)
         return true;
     return false;
 }
@@ -39,7 +34,7 @@ $balls_number = $_POST['balls'];
 $wallet = 100;
 $game = $_POST['game'];
 $wygrane = 0;
-$liczby_losowane = array_fill(0, 50, 0);
+$liczby_losowane = array_fill(0, $maxballnumber, 0);
 $prize_table = array(
     1 => array(
         0 => 0,
@@ -132,14 +127,14 @@ $prize_table = array(
 for($idx=0; $idx<$game; $idx++)
 {
     //inicjacja
-    $random_balls = range(1, 50);
-    for($i = 0; $i < 50; $i++)
+    $random_balls = range(1, $maxballnumber);
+    for($i = 0; $i < $maxballnumber; $i++)
     {
         $random_balls[$i] = array("ball" => $random_balls[$i], "winner"=>false); //tworzenie tablic
     }
 
     $winballs_ammount = 0;
-    $balls = range(1, 50);
+    $balls = range(1, $maxballnumber);
     shuffle($balls);
 
 
@@ -165,7 +160,7 @@ for($idx=0; $idx<$game; $idx++)
     //2 wymiar - ilosc trafionych liczb
     
 
-    $prize = $prize_table[$balls_number][$winballs_ammount]*2;
+    $prize = $prize_table[$balls_number][$winballs_ammount];
     $wallet = $wallet + $prize - 2;
     if($prize > 0)
         $wygrane++;
@@ -196,7 +191,7 @@ function printBallPercent($ball, $percent)
 function printBallsPercent($balls)
 {
     echo "<span class='lbpc'>";
-    for($i=1; $i<=50; $i++)
+    for($i=1; $i<=70; $i++)
     {
         printBallPercent($i, ($balls[$i]/$balls[0])*100);
     }
