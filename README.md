@@ -1,5 +1,5 @@
 # KenoLotto
-Keno Lotto website
-http://szymongajda.pl/keno/index.php
+Keno Lotto website demo:
+http://keno.epizy.com/index.php
 
 Strona pisana na zaliczenie przedmiotu Programowanie stron WWW.
